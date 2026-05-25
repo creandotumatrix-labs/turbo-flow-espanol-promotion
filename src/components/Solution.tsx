@@ -1,38 +1,57 @@
-import { Check, Shield, Zap, Users, BookOpen, Target, TrendingUp } from "lucide-react";
+import { Check, Shield, Zap, Users, Database, GitBranch, Brain, Target } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const solutions = [
   {
-    icon: Shield,
-    title: "Entorno de Aprendizaje Seguro",
-    description: "Practica sin miedo a romper producción. Entornos aislados con verificaciones de calidad integradas."
-  },
-  {
     icon: Zap,
-    title: "Cero Frustración de Configuración",
-    description: "Entorno funcionando en 5 minutos, no 5 días. Un comando y estás listo para programar."
+    title: "Ruflo v3.5 — Un Comando",
+    description: "Un solo `npx ruflo@latest init` reemplaza 4 instalaciones separadas. Incluye 215+ herramientas MCP, 60+ agentes, sistema de habilidades y ruteo de modelos en 3 niveles."
   },
   {
-    icon: BookOpen,
-    title: "Metodología SPARC Estructurada",
-    description: "Proceso claro paso a paso para saber exactamente qué hacer en cada etapa del desarrollo."
+    icon: Database,
+    title: "Beads — Memoria Entre Sesiones",
+    description: "Memoria de proyecto JSONL nativa de git. Registra issues, decisiones y bloqueos que persisten entre sesiones y entre agentes del equipo."
+  },
+  {
+    icon: Brain,
+    title: "GitNexus — Grafo de Conocimiento",
+    description: "Indexa dependencias, cadenas de llamadas y flujos de ejecución de tu código base. Detección de radio de impacto vía servidor MCP integrado."
+  },
+  {
+    icon: GitBranch,
+    title: "Git Worktrees — Aislamiento Total",
+    description: "Cada agente trabaja en su propio worktree aislado con namespacing automático de esquemas PG Vector. Sin conflictos, sin interferencias."
   },
   {
     icon: Users,
-    title: "610+ Guías Especializadas",
-    description: "Como tener mentores expertos para cada tipo de tarea. El experto correcto, siempre."
+    title: "Equipos de Agentes Nativos",
+    description: "Generación multi-agente experimental de Anthropic habilitada por defecto. Máximo 3 compañeros, profundidad de recursión 2, con ruteo semántico."
   },
   {
-    icon: Target,
-    title: "Compuertas de Calidad Integradas",
-    description: "Pruebas automatizadas y verificaciones atrapan errores antes de que lleguen a producción."
-  },
-  {
-    icon: TrendingUp,
-    title: "Confianza A Través del Éxito",
-    description: "Victorias rápidas que construyen impulso y eliminan el miedo desde el día uno."
+    icon: Shield,
+    title: "6 Plugins Enfocados",
+    description: "Agentic QE, Code Intelligence, Test Intelligence, Perf Optimizer, Teammate Plugin y Gastown Bridge — sin plugins redundantes ni específicos de dominio."
   }
 ];
+
+const v3vsV4 = {
+  before: [
+    { label: "Pasos de instalación", value: "15 pasos manuales" },
+    { label: "Paquetes principales", value: "4 instalaciones separadas" },
+    { label: "Herramientas MCP", value: "175+" },
+    { label: "Memoria entre sesiones", value: "Ninguna" },
+    { label: "Aislamiento de agentes", value: "Ninguno" },
+    { label: "Grafo de código base", value: "Ninguno" },
+  ],
+  after: [
+    { label: "Pasos de instalación", value: "10 automatizados" },
+    { label: "Paquetes principales", value: "1 (Ruflo v3.5)" },
+    { label: "Herramientas MCP", value: "215+ (+23%)" },
+    { label: "Memoria entre sesiones", value: "Beads (JSONL git)" },
+    { label: "Aislamiento de agentes", value: "Git Worktrees" },
+    { label: "Grafo de código base", value: "GitNexus + MCP" },
+  ],
+};
 
 export const Solution = () => {
   return (
@@ -42,14 +61,14 @@ export const Solution = () => {
         <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-medium mb-4">
             <Check className="w-4 h-4" />
-            La Solución
+            Turbo Flow v4.0
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            Lo Que <span className="gradient-text">Turbo Flow</span> Realmente Resuelve
+            Lo Que <span className="gradient-text">v4.0</span> Añade
           </h2>
           <p className="text-xl text-muted-foreground">
-            Piensa en Turbo Flow como "Ruedas de Entrenamiento de IA" que se convierten 
-            en una bicicleta de alto rendimiento.
+            La migración a Ruflo v3.5 no es solo una actualización — es una arquitectura completamente nueva
+            con memoria, aislamiento e inteligencia de código base.
           </p>
         </div>
 
@@ -78,31 +97,21 @@ export const Solution = () => {
           })}
         </div>
 
-        {/* Before/After Comparison */}
+        {/* v3 vs v4 Comparison */}
         <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           <Card className="bg-destructive/5 border-destructive/20">
             <CardContent className="p-8 space-y-4">
               <h3 className="text-2xl font-bold text-destructive flex items-center gap-2">
                 <span className="text-3xl">❌</span>
-                Antes de Turbo Flow
+                Turbo Flow v3.4.1
               </h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-destructive">•</span>
-                  3-5 días de tiempo de configuración por desarrollador
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-destructive">•</span>
-                  60% del tiempo gastado solucionando problemas
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-destructive">•</span>
-                  Resultados inconsistentes en todo el equipo
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-destructive">•</span>
-                  Conocimiento atrapado en unos pocos "expertos"
-                </li>
+              <ul className="space-y-3">
+                {v3vsV4.before.map((item, i) => (
+                  <li key={i} className="flex items-start justify-between gap-4 pb-2 border-b border-border/40 last:border-0">
+                    <span className="text-muted-foreground text-sm">{item.label}</span>
+                    <span className="text-destructive font-semibold text-sm text-right shrink-0">{item.value}</span>
+                  </li>
+                ))}
               </ul>
             </CardContent>
           </Card>
@@ -111,26 +120,42 @@ export const Solution = () => {
             <CardContent className="p-8 space-y-4">
               <h3 className="text-2xl font-bold text-primary flex items-center gap-2">
                 <span className="text-3xl">✅</span>
-                Después de Turbo Flow
+                Turbo Flow v4.0.0
               </h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary">•</span>
-                  5 minutos de tiempo de configuración (99% de reducción)
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary">•</span>
-                  95% del tiempo gastado en desarrollo real
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary">•</span>
-                  Todos tienen el mismo entorno poderoso
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary">•</span>
-                  Todo el equipo se vuelve competente en IA
-                </li>
+              <ul className="space-y-3">
+                {v3vsV4.after.map((item, i) => (
+                  <li key={i} className="flex items-start justify-between gap-4 pb-2 border-b border-border/40 last:border-0">
+                    <span className="text-muted-foreground text-sm">{item.label}</span>
+                    <span className="text-primary font-semibold text-sm text-right shrink-0">{item.value}</span>
+                  </li>
+                ))}
               </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Architecture callout */}
+        <div className="mt-10 max-w-6xl mx-auto">
+          <Card className="bg-card/50 backdrop-blur-sm border-accent/30">
+            <CardContent className="p-6">
+              <div className="flex items-start gap-3 mb-4">
+                <Target className="w-5 h-5 text-accent shrink-0 mt-1" />
+                <h3 className="text-lg font-semibold text-accent">Arquitectura de 3 Niveles de Memoria</h3>
+              </div>
+              <div className="grid md:grid-cols-3 gap-4 text-sm text-muted-foreground">
+                <div className="space-y-1">
+                  <p className="font-semibold text-foreground">Beads (proyecto/git)</p>
+                  <p>Issues, decisiones y bloqueos persistentes entre sesiones vía JSONL nativo de git</p>
+                </div>
+                <div className="space-y-1">
+                  <p className="font-semibold text-foreground">Tareas Nativas (sesión)</p>
+                  <p>Contexto de sesión activa en <code className="text-primary">~/.claude/</code> gestionado por Claude Code</p>
+                </div>
+                <div className="space-y-1">
+                  <p className="font-semibold text-foreground">AgentDB + RuVector WASM</p>
+                  <p>Base de conocimiento vectorial acelerada por WASM para búsqueda semántica entre agentes</p>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>

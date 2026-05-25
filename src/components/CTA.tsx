@@ -30,7 +30,7 @@ export const CTA = () => {
             {/* Command */}
             <div className="bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-lg p-4 font-mono text-sm md:text-base max-w-3xl mx-auto">
               <code className="text-primary-foreground">
-                devpod up https://github.com/marcuspat/turbo-flow-claude --ide vscode
+                devpod up https://github.com/creandotumatrixlabs/turbo-flow --ide vscode
               </code>
             </div>
 
