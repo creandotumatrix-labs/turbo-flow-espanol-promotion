@@ -107,9 +107,9 @@ export const Solution = () => {
               </h3>
               <ul className="space-y-3">
                 {v3vsV4.before.map((item, i) => (
-                  <li key={i} className="flex items-start justify-between gap-4 pb-2 border-b border-border/40 last:border-0">
-                    <span className="text-muted-foreground text-sm">{item.label}</span>
-                    <span className="text-destructive font-semibold text-sm text-right shrink-0">{item.value}</span>
+                  <li key={i} className="flex items-start justify-between gap-2 pb-2 border-b border-border/40 last:border-0">
+                    <span className="text-muted-foreground text-xs sm:text-sm">{item.label}</span>
+                    <span className="text-destructive font-semibold text-xs sm:text-sm text-right min-w-0">{item.value}</span>
                   </li>
                 ))}
               </ul>
@@ -124,9 +124,9 @@ export const Solution = () => {
               </h3>
               <ul className="space-y-3">
                 {v3vsV4.after.map((item, i) => (
-                  <li key={i} className="flex items-start justify-between gap-4 pb-2 border-b border-border/40 last:border-0">
-                    <span className="text-muted-foreground text-sm">{item.label}</span>
-                    <span className="text-primary font-semibold text-sm text-right shrink-0">{item.value}</span>
+                  <li key={i} className="flex items-start justify-between gap-2 pb-2 border-b border-border/40 last:border-0">
+                    <span className="text-muted-foreground text-xs sm:text-sm">{item.label}</span>
+                    <span className="text-primary font-semibold text-xs sm:text-sm text-right min-w-0">{item.value}</span>
                   </li>
                 ))}
               </ul>

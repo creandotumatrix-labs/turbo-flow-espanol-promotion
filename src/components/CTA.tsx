@@ -28,8 +28,8 @@ export const CTA = () => {
             </div>
 
             {/* Command */}
-            <div className="bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-lg p-4 font-mono text-sm md:text-base max-w-3xl mx-auto">
-              <code className="text-primary-foreground">
+            <div className="bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-lg p-3 sm:p-4 font-mono text-xs sm:text-sm md:text-base max-w-3xl mx-auto overflow-hidden">
+              <code className="text-primary-foreground block overflow-x-auto whitespace-nowrap">
                 devpod up https://github.com/creandotumatrixlabs/turbo-flow --ide vscode
               </code>
             </div>
