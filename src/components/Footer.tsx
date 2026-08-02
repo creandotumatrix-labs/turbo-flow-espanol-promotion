@@ -1,7 +1,7 @@
 import { Github } from "lucide-react";
 
-const GITHUB = "https://github.com/creandotumatrixlabs/turbo-flow";
-const ORG_GITHUB = "https://github.com/creandotumatrixlabs";
+const GITHUB = "https://github.com/marcuspat/turbo-flow";
+const ORG_GITHUB = "https://github.com/marcuspat";
 
 export const Footer = () => {
   return (

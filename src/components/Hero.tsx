@@ -60,7 +60,7 @@ export const Hero = () => {
             className="group w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg shadow-glow-primary"
             asChild
           >
-            <a href="https://github.com/creandotumatrixlabs/turbo-flow" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/marcuspat/turbo-flow" target="_blank" rel="noopener noreferrer">
               Comenzar Ahora
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
@@ -71,7 +71,7 @@ export const Hero = () => {
             className="group w-full sm:w-auto border-primary/50 hover:bg-primary/10 font-semibold px-8 py-6 text-lg"
             asChild
           >
-            <a href="https://github.com/creandotumatrixlabs/turbo-flow" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/marcuspat/turbo-flow" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 w-5 h-5" />
               Ver en GitHub
             </a>
@@ -82,7 +82,7 @@ export const Hero = () => {
         <div className="pt-4 sm:pt-8 max-w-3xl mx-auto">
           <div className="bg-card/50 backdrop-blur-sm border border-primary/30 rounded-lg p-3 sm:p-4 font-mono text-xs sm:text-sm md:text-base flex items-center gap-2 sm:gap-4 overflow-hidden">
             <code className="text-primary flex-1 text-left overflow-x-auto whitespace-nowrap min-w-0">
-              devpod up https://github.com/creandotumatrixlabs/turbo-flow --ide vscode
+              devpod up https://github.com/marcuspat/turbo-flow --ide vscode
             </code>
             <Button size="sm" variant="ghost" className="shrink-0 hover:bg-primary/10 text-xs sm:text-sm">
               Copiar
@@ -114,7 +114,7 @@ export const Hero = () => {
         <p className="text-xs sm:text-sm text-muted-foreground pt-2 sm:pt-4">
           Construido y Presentado por{" "}
           <a
-            href="https://github.com/creandotumatrixlabs"
+            href="https://github.com/marcuspat"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline font-semibold"
