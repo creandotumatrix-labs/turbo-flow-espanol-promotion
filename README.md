@@ -1,6 +1,6 @@
 # Turbo Flow — Promoción en Español
 
-Página de marketing en español para [Turbo Flow v4.0](https://github.com/marcuspat/turbo-flow), el entorno de desarrollo agéntico con 600+ subagentes de IA y la migración a Ruflo.
+Página de marketing en español para [Turbo Flow v4.0](https://github.com/marcuspat/turbo-flow), el entorno de desarrollo agéntico con 60+ subagentes de IA y la migración a Ruflo.
 
 ## Secciones de la página
 
